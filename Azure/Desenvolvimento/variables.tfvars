@@ -1,0 +1,5 @@
+resoucegroup = "az-tf-aks-environment"
+environment = "Desenvolvimento"
+location    = "Brazil South"
+aksname = "az-tf-aks-dev"
+aksdnsprefix = "az-tf-aks-dev"

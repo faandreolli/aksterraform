@@ -1,3 +1,9 @@
+variable "tenant_id" {
+  type = string
+  description = "Tenant do ambiente" 
+  
+}
+
 variable "resoucegroup" {
   type = string
   description = "Resource Group do AKS"
@@ -22,8 +28,15 @@ variable "aksname" {
   default     = ""
 }
 
-variable "aksdnsprefix" {
+variable "tag_environment" {
   type        = string
-  description = "Prefixo do DNS"
-  default     = "" 
+  description = "tag do ambiente que será criado"
+  default     = ""
+}
+
+variable "tag_createBy" {
+  type = string
+  description = "por onde esta sendo criado"
+  default = "Terraform"
+  
 }
